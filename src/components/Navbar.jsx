@@ -27,6 +27,9 @@ function Navbar() {
           <Link onClick={handleClick} to="/weather-app" className={`mr-4 text-xl md:text-base md:text-white md:inline ${clicked ? "text-3xl mt-4" : ""}`}>
             Weather forecast
           </Link>
+          <Link onClick={handleClick} to="/tictactoe-app" className={`mr-4 text-xl md:text-base md:text-white md:inline ${clicked ? "text-3xl mt-4" : ""}`}>
+            Tic-Tac-Toe
+          </Link>
         </div>
         <div className="md:hidden z-50">
           <BurgerButton clicked={clicked} handleClick={handleClick} />
