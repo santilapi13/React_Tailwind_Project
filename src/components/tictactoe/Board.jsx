@@ -6,7 +6,7 @@ function Board({squares, onClick, player, winningSquares}) {
     const createSquares = (values) => (
         values.map(value => (
             <Square
-                //winner={winningSquares.includes(value)} // TODO: Winning animation
+                winner={winningSquares.includes(value)} // TODO: Winning animation
                 player={player}
                 onClick={() => onClick(value)} 
                 value={squares[value]}
